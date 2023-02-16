@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Situs yang bantu kamu buat milih laptop sesuai kebutuhan.">
+    <meta name="author" content="Mas Apry">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>pilihlaptop - Situs yang bantu kamu buat milih laptop sesuai kebutuhan</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Helvetica:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="dss-pilihlaptop.html">Layanan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="products.html">Daftar laptop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="admin/login.php">Login Mitra</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html#contact">Hubungi kami</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://web.facebook.com/">
+                        <i class="fas fa-circle fa-stack-2x facebook"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://www.instagram.com/">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+        <!-- Services -->
+        <div id="services" class="cards-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Tentukan pilihanmu</h2>
+                        <p class="p-heading p-large">Tentukan hal yang menurutmu penting, kami akan memberikan saran yang cocok buat kamu.</p>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                        <!-- Card -->
+                        <div class="card">
+                            <!-- <img class="card-image" src="images/services-icon-2.svg" alt="alternative"> -->
+                            <!-- <div class="card-body"> -->
+                                <h4 class="card-title">Prosesor Cepat</h4>
+                                <div class="slidecontainer">
+                                    <p><span id="L1">Mmm...</span></p>
+                                    <input type="range" min="1" max="4" value="1" class="rangeslider" id="R1">
+                                    <p>Poin: <span id="kecepatan_prosesor"></span></p>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                        <!-- end of card -->
+    
+                        <!-- Card -->
+                        <div class="card">
+                            <!-- <img class="card-image" src="images/services-icon-1.svg" alt="alternative"> -->
+                            <!-- <div class="card-body"> -->
+                                <h4 class="card-title">RAM Besar</h4>
+                                <div class="slidecontainer">
+                                    <p><span id="L2">Mmm...</span></p>
+                                    <input type="range" min="1" max="4" value="1" class="rangeslider" id="R2">
+                                    <p>Poin: <span id="kapasitas_ram"></span></p>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                        <!-- end of card -->
+
+                        <!-- Card -->
+                        <div class="card">
+                            <!-- <img class="card-image" src="images/services-icon-3.svg" alt="alternative"> -->
+                            <!-- <div class="card-body"> -->
+                                <h4 class="card-title">Kapasitas Penyimpanan Besar</h4>
+                                <div class="slidecontainer">
+                                    <p><span id="L3">Mmm...</span></p>
+                                    <input type="range" min="1" max="4" value="1" class="rangeslider" id="R3">
+                                    <p>Poin: <span id="kapasitas_penyimpanan"></span></p>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                        <!-- end of card -->
+    
+                        <!-- Card -->
+                        <div class="card">
+                            <!-- <img class="card-image" src="images/services-icon-2.svg" alt="alternative"> -->
+                            <!-- <div class="card-body"> -->
+                                <h4 class="card-title">Jenis VGA</h4>
+                                <div class="slidecontainer">
+                                    <p><span id="L4">Mmm...</span></p>
+                                    <input type="range" min="1" max="4" value="1" class="rangeslider" id="R4">
+                                    <p>Poin: <span id="vga_card"></span></p>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                        <!-- end of card -->
+    
+                        <!-- Card -->
+                        <div class="card">
+                            <!-- <img class="card-image" src="images/services-icon-3.svg" alt="alternative"> -->
+                            <!-- <div class="card-body"> -->
+                                <h4 class="card-title">Sistem Operasi Terbaru</h4>
+                                <div class="slidecontainer">
+                                    <p><span id="L5">Mmm...</span></p>
+                                    <input type="range" min="1" max="4" value="1" class="rangeslider" id="R5">
+                                    <p>Poin: <span id="sistem_operasi"></span></p>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                        <!-- end of card -->
+    
+                        <!-- Card -->
+                        <div class="card">
+                            <!-- <img class="card-image" src="images/services-icon-1.svg" alt="alternative"> -->
+                            <!-- <div class="card-body"> -->
+                                <h4 class="card-title">Daya Tahan Baterei lama</h4>
+                                <div class="slidecontainer">
+                                    <p><span id="L6">Mmm...</span></p>
+                                    <input type="range" min="1" max="4" value="1" class="rangeslider" id="R6">
+                                    <p>Poin: <span id="baterei"></span></p>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                        <!-- end of card -->
+    
+                        <!-- Card -->
+                        <div class="card">
+                            <!-- <img class="card-image" src="images/services-icon-3.svg" alt="alternative"> -->
+                            <!-- <div class="card-body"> -->
+                                <h4 class="card-title">Harga</h4>
+                                <div class="slidecontainer">
+                                    <p><span id="L7">Mmm...</span></p>
+                                    <input type="range" min="1" max="4" value="1" class="rangeslider" id="R7">
+                                    <p>Poin: <span id="harga"></span></p>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                        <!-- end of card -->
+                        <div class="form-group">
+                            <button type="submit" id="sumbit-perhitungan" onclick="submitPerhitungan()" class="form-control-submit-button">CARI REKOMENDASI</button>
+                        </div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of cards-1 -->
+        <!-- end of services -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>pilihlaptop</h4>
+                        <p>Kami berusaha memberikan rekomendasi laptop  terbaik berdasarkan pilihan kamu.</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Tautan Penting</h4>
+                        <ul class="list-unstyled li-space-lg">
+                          
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Baca <a class="turquoise" href="terms-conditions.html">Aturan Penggunaan</a>, <a class="turquoise" href="privacy-policy.html">Kebijakan Privasi</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Media Sosial</h4>
+                        <span class="fa-stack">
+                            <a href="https://web.facebook.com/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.instagram.com/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.linkedin.com/in/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Desain template dari: <a href="https://inovatik.com">Inovatik</a> - All rights reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+</body>    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+    <script>
+        var R1 = document.getElementById("R1");
+        var layar_ukuran = document.getElementById("kecepatan_prosesor");
+        var L1 = document.getElementById("L1");
+        layar_ukuran.innerHTML = R1.value;
+        R1.oninput = function() {
+            if(this.value == 1){
+                L1.innerHTML = "Nggak penting";
+                layar_ukuran.innerHTML = this.value;
+            }
+            else if(this.value == 2){
+                L1.innerHTML = "Cukup";
+                layar_ukuran.innerHTML = this.value;
+            }
+            else if(this.value == 3){
+                L1.innerHTML = "Lumayan";
+                layar_ukuran.innerHTML = this.value;
+            }
+            else if(this.value == 4){
+                L1.innerHTML = "Penting Banget";
+                layar_ukuran.innerHTML = this.value;
+            }
+        }
+
+        var R2 = document.getElementById("R2");
+        var layar_resolusi = document.getElementById("kapasitas_ram");
+        var L2 = document.getElementById("L2");
+        layar_resolusi.innerHTML = R2.value;
+        R2.oninput = function() {
+            if(this.value == 1){
+                L2.innerHTML = "Nggak penting";
+                layar_resolusi.innerHTML = this.value;
+            }
+            else if(this.value == 2){
+                L2.innerHTML = "Cukup";
+                layar_resolusi.innerHTML = this.value;
+            }
+            else if(this.value == 3){
+                L2.innerHTML = "Lumayan";
+                layar_resolusi.innerHTML = this.value;
+            }
+            else if(this.value == 4){
+                L2.innerHTML = "Penting Banget";
+                layar_resolusi.innerHTML = this.value;
+            }
+        }
+
+        var R3 = document.getElementById("R3");
+        var layar_model = document.getElementById("kapasitas_penyimpanan");
+        var L3 = document.getElementById("L3");
+        layar_model.innerHTML = R3.value;
+        R3.oninput = function() {
+            if(this.value == 1){
+                L3.innerHTML = "Nggak penting";
+                layar_model.innerHTML = this.value;
+            }
+            else if(this.value == 2){
+                L3.innerHTML = "Cukup";
+                layar_model.innerHTML = this.value;
+            }
+            else if(this.value == 3){
+                L3.innerHTML = "Lumayan";
+                layar_model.innerHTML = this.value;
+            }
+            else if(this.value == 4){
+                L3.innerHTML = "Penting Banget";
+                layar_model.innerHTML = this.value;
+            }
+        }
+
+        var R4 = document.getElementById("R4");
+        var kapasitas_baterai = document.getElementById("vga_card");
+        var L4 = document.getElementById("L4");
+        kapasitas_baterai.innerHTML = R4.value;
+        R4.oninput = function() {
+            if(this.value == 1){
+                L4.innerHTML = "Nggak penting";
+                kapasitas_baterai.innerHTML = this.value;
+            }
+            else if(this.value == 2){
+                L4.innerHTML = "Cukup";
+                kapasitas_baterai.innerHTML = this.value;
+            }
+            else if(this.value == 3){
+                L4.innerHTML = "Lumayan";
+                kapasitas_baterai.innerHTML = this.value;
+            }
+            else if(this.value == 4){
+                L4.innerHTML = "Penting Banget";
+                kapasitas_baterai.innerHTML = this.value;
+            }
+        }
+
+        var R5 = document.getElementById("R5");
+        var kamera_jumlah = document.getElementById("sistem_operasi");
+        var L5 = document.getElementById("L5");
+        kamera_jumlah.innerHTML = R5.value;
+        R5.oninput = function() {
+            if(this.value == 1){
+                L5.innerHTML = "Nggak penting";
+                kamera_jumlah.innerHTML = this.value;
+            }
+            else if(this.value == 2){
+                L5.innerHTML = "Cukup";
+                kamera_jumlah.innerHTML = this.value;
+            }
+            else if(this.value == 3){
+                L5.innerHTML = "Lumayan";
+                kamera_jumlah.innerHTML = this.value;
+            }
+            else if(this.value == 4){
+                L5.innerHTML = "Penting Banget";
+                kamera_jumlah.innerHTML = this.value;
+            }
+        }
+
+        var R6 = document.getElementById("R6");
+        var kamera_res_depan = document.getElementById("baterei");
+        var L6 = document.getElementById("L6");
+        kamera_res_depan.innerHTML = R6.value;
+        R6.oninput = function() {
+            if(this.value == 1){
+                L6.innerHTML = "Nggak penting";
+                kamera_res_depan.innerHTML = this.value;
+            }
+            else if(this.value == 2){
+                L6.innerHTML = "Cukup";
+                kamera_res_depan.innerHTML = this.value;
+            }
+            else if(this.value == 3){
+                L6.innerHTML = "Lumayan";
+                kamera_res_depan.innerHTML = this.value;
+            }
+            else if(this.value == 4){
+                L6.innerHTML = "Penting Banget";
+                kamera_res_depan.innerHTML = this.value;
+            }
+        }
+
+        var R7 = document.getElementById("R7");
+        var kamera_res_belakang = document.getElementById("harga");
+        var L7 = document.getElementById("L7");
+        kamera_res_belakang.innerHTML = R7.value;
+        R7.oninput = function() {
+            if(this.value == 1){
+                L7.innerHTML = "Nggak penting";
+                kamera_res_belakang.innerHTML = this.value;
+            }
+            else if(this.value == 2){
+                L7.innerHTML = "Cukup";
+                kamera_res_belakang.innerHTML = this.value;
+            }
+            else if(this.value == 3){
+                L7.innerHTML = "Lumayan";
+                kamera_res_belakang.innerHTML = this.value;
+            }
+            else if(this.value == 4){
+                L7.innerHTML = "Penting Banget";
+                kamera_res_belakang.innerHTML = this.value;
+            }
+        }
+
+    
+        function submitPerhitungan(){
+            arr_post = {
+                "kecepatan_prosesor":kecepatan_prosesor.innerText,
+                "kapasitas_ram":kapasitas_ram.innerText,
+                "kapasitas_penyimpanan":kapasitas_penyimpanan.innerText,
+                "vga_card":vga_card.innerText,
+                "sistem_operasi":sistem_operasi.innerText,
+                "baterei":baterei.innerText,
+                "harga":harga.innerText
+                };
+// console.log(arr_post);
+            fetch('http://localhost/pilihlaptop/api/perhitungan', {
+                method:'POST',
+                mode:"cors", 
+                body:JSON.stringify(arr_post), 
+                headers: new Headers({"Content-type":"Application/json"})
+            })
+            .then(function(response){
+                if(response.status !== 200){
+                    console.log('Ups, ada masalah: '+response.status);
+                }
+                return response.json()
+            })
+            .then(result => {
+                localStorage.setItem('hasil', JSON.stringify(result));
+                window.location.replace('result.html');
+            })
+            .catch(function(err){
+                console.log(err);
+            });
+        }
+
+
+        
+
+    </script>
+    
+<!-- </body> -->
+</html>

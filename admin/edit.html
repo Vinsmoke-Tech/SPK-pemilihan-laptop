@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Website Title -->
+    <title>pilihlaptop - Situs yang bantu kamu buat milih laptop sesuai kebutuhan</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Helvetica:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/fontawesome-all.css" rel="stylesheet">
+    <link href="../css/swiper.css" rel="stylesheet">
+	<link href="../css/magnific-popup.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<!-- Favicon  -->
+    <link rel="icon" href="../images/favicon.png">
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <!-- Text Logo - Use this if you don't have a graphic logo -->
+    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
+  
+    <!-- Image Logo -->
+    <!-- <a class="navbar-brand logo-image" href="index.html"><img src="../images/logo.svg" alt="alternative"></a> -->
+    <button type="button" class="btn btn-outline-secondary" onclick="back()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"></path>
+        </svg> Kembali
+    </button>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-awesome fas fa-bars"></span>
+        <span class="navbar-toggler-awesome fas fa-times"></span>
+    </button>
+    <!-- end of mobile menu toggle button -->
+  
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+              <li class="nav-item" id="store_name">
+                  
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link page-scroll" onclick="logout()">Keluar</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link page-scroll" href="http://localhost/index.html#contact">Hubungi kami</a>
+            </li>
+        </ul>
+        <span class="nav-item social-icons">
+            <span class="fa-stack">
+                <a href="https://web.facebook.com/">
+                    <i class="fas fa-circle fa-stack-2x facebook"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                </a>
+            </span>
+            <span class="fa-stack">
+                <a href="https://www.instagram.com//">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-instagram fa-stack-1x"></i>
+                </a>
+            </span>
+        </span>
+    </div>
+  </nav> <!-- end of navbar -->
+  <!-- end of navigation -->
+  
+
+        <!-- Services -->
+        <div id="services" class="cards-1">
+            <div class="container">
+                <h2>Edit</h2>
+                <img class="card-image" id="pic-product">
+                
+                <!-- merk-type -->
+                <div class="label-text" style="margin-bottom: 10px; font-weight: bold;">Merk dan tipe
+                    <!-- <label for="merk-type" style="text-align: left;" class="label-text">Merk dan Tipe</label> -->
+                    <input type="text" required class="form-control" id="merk-type" placeholder="Merk, tipe dan informasi varian">
+                </div>                
+
+                <!-- prosesor -->
+                <form role="form">
+                    <div class="form-group">
+                    <div class="label-text" style="margin-bottom: 10px; font-weight: bold;">Prosesor
+                        <input type="text" required placeholder="Nama, tipe & seri prosesor" id="prosesor" class="form-control"/>
+                    </div>
+                </form>
+
+                <!-- speed prosesor -->
+                <form role="form">
+                    <div class="form-group">
+                    <div class="label-text" style="margin-bottom: 10px; font-weight: bold;">Kecepatan Prosesor
+                        <input type="text" required placeholder="Pilih" id="kecepatan_prosesor" class="form-control" list="prosesor_list"/>
+                    </div>
+                    <datalist id="prosesor_list">
+                        <option value="<2 GHz"></option>
+                        <option value="2.1 - 3.4 GHz"></option>
+                        <option value=">3.5 GHz"></option>
+                    </datalist>
+                </form>
+
+                <!-- kapasitas ram -->
+                <form role="form">
+                    <div class="form-group">
+                        <div class="label-text" style="margin-bottom: 10px; font-weight: bold;">Kapasitas RAM
+                    <input type="text" required placeholder="Pilih" id="kapasitas_ram" class="form-control" list="kapasitas_ram_list"/>
+                    <span class="input-group-text">GB</span>
+                    </div>
+                    <datalist id="kapasitas_ram_list">
+                    <option value="4"></option>
+                    <option value="6"></option>
+                    <option value="8"></option>
+                    <option value="10"></option>
+                    </datalist>
+                </form>
+
+                <!-- kapasitas penyimpanan -->
+                <form role="form">
+                    <div class="form-group">
+                        <div class="label-text" style="margin-bottom: 10px; font-weight: bold;">Kapasitas Penyimpanan
+                    <input type="text" required placeholder="Pilih" id="kapasitas_penyimpanan" class="form-control" list="kapasitas_penyimpanan_list"/>
+                    <span class="input-group-text">GB</span>
+                    </div>
+                    <datalist id="kapasitas_penyimpanan_list">
+                    <option value="256"></option>
+                    <option value="512"></option>
+                    <option value="1000"></option>
+                    </datalist>
+                </form>
+
+                
+
+                <!-- vga card -->
+                <form role="form">
+                    <div class="form-group">
+                        <div class="label-text" style="margin-bottom: 10px; font-weight: bold;">Tipe VGA
+                    <input type="text" required placeholder="Pilih" id="vga_card" class="form-control" list="vga_list"/>
+                    </div>
+                    <datalist id="vga_list">
+                      <option>onboard</option>
+                      <option>dedicated</option>
+                    </datalist>
+                </div>
+
+                <!-- sistem operasi -->
+                <form role="form">
+                    <div class="form-group">
+                        <div class="label-text" style="margin-bottom: 10px; font-weight: bold;">Sistem Operasi
+                    <input type="text" required placeholder="Pilih" id="sistem_operasi" class="form-control" list="OS-list"/>
+                    </div>
+                    <datalist id="OS-list">
+                      <option >Windows 10 home</option>
+                      <option >Windows 10 pro</option>
+                      <option >Windows 11</option>
+                    </datalist>
+                </div>
+
+                <!-- baterei -->
+                <form role="form">
+                    <div class="form-group">
+                        <div class="label-text" style="margin-bottom: 10px; font-weight: bold;">Daya tahan baterei
+                    <input type="text" required placeholder="Pilih" id="baterei" class="form-control" list="baterei-list"/>
+                    <span class="input-group-text">JAM</span>    
+                    </div>
+                    <datalist id="baterei-list">
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                    </datalist>
+                </div>
+
+                <!-- harga -->
+                <div class="label-text" style="margin-bottom: 10px; font-weight: bold;">Harga
+                    <div class="input-group">
+                        <input type="number" required class="form-control" id="harga" placeholder="input harga">
+                        <span class="input-group-text">Rupiah</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="button" id="save" onclick="postData()" class="btn btn-primary btn-lg btn-block">Simpan</button>
+                </div>
+
+
+            </div>
+        </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>pilihlaptop</h4>
+                        <p>Kami berusaha memberikan rekomendasi laptop  terbaik berdasarkan pilihan kamu.</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Tautan Penting</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Prosesor kami nilai berdararkan <a class="turquoise" href="https://www.techcenturion.com/smartphone-processors-ranking">Centurion Mark</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Baca <a class="turquoise" href="terms-conditions.html">Aturan Penggunaan</a>, <a class="turquoise" href="privacy-policy.html">Kebijakan Privasi</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Media Sosial</h4>
+                        <span class="fa-stack">
+                            <a href="https://web.facebook.com/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.instagram.com//">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.linkedin.com/in/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+   
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Desain template dari: <a href="https://inovatik.com">Inovatik</a> - All rights reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+</body>    	
+    <!-- Scripts -->
+  <script src="../js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+  <script src="../js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+  <script src="../js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+  <script src="../js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+  <script src="../js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+  <script src="../js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+  <script src="../js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+  <script src="../js/scripts.js"></script> <!-- Custom scripts -->
+
+<script>
+
+window.onload = function(){
+    fetch("http://localhost/pilihlaptop/api/adm/laptop")
+    .then(function(response){
+        if(response.status !==200){
+            alert('Ups, '+response.statusText);
+            window.location.replace("http://localhost/pilihlaptop/admin/login.php");
+        }
+    })
+}
+
+function back(){
+    window.location.replace('http://localhost/pilihlaptop/admin/dashboard.php');
+}
+
+
+function getUrlParam(id){
+    let param = window.location.search.substring(4);
+    return param;
+}
+
+var param = getUrlParam('id');
+fetch('http://localhost/pilihlaptop/api/laptop/'+param)
+.then(function(response){
+    if(response.status !== 200){
+        console.log('Ups, ada masalah: '+response.statusText);
+    }
+    return response.json()
+})
+.then(result => {
+    sessionStorage.setItem('img-url', result.image_url);
+    let img = document.getElementById('pic-product');
+    img.setAttribute('src', result.image_url);
+    img.setAttribute('onerror', 'this.src="../images/no-img.png"');
+    img.setAttribute('style', 'border-radius:0.5em; width:100%;');
+    document.getElementById('merk-type').value = result.merk_type;
+    document.getElementById('prosesor').value = result.prosesor;
+    document.getElementById('kecepatan_prosesor').value = result.kecepatan_prosesor;
+    document.getElementById('kapasitas_ram').value = result.kapasitas_ram;
+    document.getElementById('kapasitas_penyimpanan').value = result.kapasitas_penyimpanan;
+    document.getElementById('vga_card').value = result.vga_card;
+    document.getElementById('sistem_operasi').value = result.sistem_operasi;
+    document.getElementById('baterei').value = result.baterei;
+    document.getElementById('harga').value = result.harga;
+})
+.catch(function(err){
+    console.log(err);
+});
+
+function postData() {
+    var merk_type               = document.getElementById('merk-type').value;
+    var prosesor                = document.getElementById('prosesor').value;
+    var kecepatan_prosesor      = document.getElementById('kecepatan_prosesor').value;
+    var kapasitas_ram           = document.getElementById('kapasitas_ram').value;
+    var kapasitas_penyimpanan   = document.getElementById('kapasitas_penyimpanan').value;
+    var vga_card                = document.getElementById('vga_card').value;
+    var sistem_operasi          = document.getElementById('sistem_operasi').value;
+    var baterei                 = document.getElementById('baterei').value;
+    var harga                   = document.getElementById('harga').value;
+    var store_name              = localStorage.getItem('store_name');
+    var image_url               = sessionStorage.getItem('img-url');
+
+    const arrPost = JSON.stringify({
+        "id":param,
+		"merk_type": merk_type,
+        "prosesor": prosesor,
+        "kecepatan_prosesor": kecepatan_prosesor,
+        "kapasitas_ram": kapasitas_ram,
+        "kapasitas_penyimpanan": kapasitas_penyimpanan,
+        "vga_card": vga_card,
+        "sistem_operasi": sistem_operasi,
+        "baterei": baterei,
+        "harga": harga,
+        "store_name": store_name,
+        "image_url":image_url
+    });
+    console.log(arrPost);
+
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "http://localhost/pilihlaptop/api/adm/laptop/"+param,
+        "method": "PUT",
+        "headers": {
+            "content-type": "application/json",
+            "cache-control": "no-cache"
+        },
+        "processData": false,
+        "data": arrPost,
+        
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.status);
+            alert(textStatus);
+            alert(errorThrown);
+        }
+    }
+
+    $.ajax(settings).done(function (response) {
+        var rsp = JSON.parse(response);
+        alert(rsp.msg);
+        back();
+        
+    });
+}
+
+</script>
+
+<!-- </body> -->
+</html>

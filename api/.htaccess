@@ -1,0 +1,34 @@
+RewriteEngine On # Turn on the rewriting engine
+# list laptop tanpa login
+RewriteRule ^laptop/?$ laptop.php [NC,L]                                    #get
+# info detail laptop tanpa login    
+RewriteRule ^laptop/([0-9]+)$ laptop.php?prdctid=$1 [L]                     #get
+
+# info nilai prosesor
+RewriteRule ^processor/?$ getprocessor.php [NC,L]                           #get
+
+
+RewriteRule ^adm/laptop/?$ adm_laptop.php [NC,L]                            #get post put delete
+RewriteRule ^adm/laptop/([0-9]+)$ adm_laptop.php?prdctid=$1 [L]             #get
+#dashboard get data
+RewriteRule ^adm/laptop/store/(.*)$ adm_laptop.php?store=$1 [L,QSA]         #get
+
+# register, login, logout, proses perhitungan (user)
+RewriteRule ^register/?$ register.php [NC,L]                                #post
+RewriteRule ^login/?$ login.php [NC,L]                                      #post
+RewriteRule ^logout/?$ logout.php [NC,L]                                    #post
+RewriteRule ^perhitungan/?$ perhitungan.php [L]                             #post
+RewriteRule ^photo-upload/?$ photo-upload.php [L]                           #post
+
+
+# ambil data berdasarkan store name
+RewriteRule ^adm/store/(.*)$ adm/get/by_store_name.php?store_name=$1 [L,QSA]         #get
+# crud data laptop berdasarkan store name
+# ambil data berdasarkan id
+RewriteRule ^adm/product/id/([0-9]+)$ adm/get/by_product_id.php?prdctid_id=$1 [L]   #get
+# tambah data laptop
+RewriteRule ^adm/product/add?$ /adm/add.php [L]                                     #post
+# edit data laptop
+RewriteRule ^adm/product/edit?$ /adm/edit.php [L]                                   #put
+# delete data laptop
+RewriteRule ^adm/product/delete?$ /adm/delete.php [L]                               #delete
